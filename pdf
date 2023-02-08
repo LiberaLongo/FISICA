@@ -1,0 +1,4 @@
+#!/bin/bash
+pdflatex fisica-formulario.tex
+rm fisica-formulario.log
+rm fisica-formulario.aux
