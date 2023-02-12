@@ -9,7 +9,7 @@
 
 \usepackage[a4paper,left=2cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}	%margins
 \usepackage{imakeidx}			%indice
-\usepackage{xcolor}				%colore testo
+\usepackage{xcolor}			%colore testo
 \usepackage{amsmath}			%matematica formule
 \usepackage{amsfonts}
 \usepackage{parskip}			%paragraph with \\
@@ -138,18 +138,43 @@ In questo caso nel risultato non ha importanza il \textit{numero} di cifre signi
 				\item Corpo in caduta
 				\item La pallina che cade e rimbalza
 			\end{enumerate}
+			Equazioni di cinematica unidimensionale
 			\begin{equation} \bar v_x = \frac{ \triangle x }{ \triangle t } = \frac{ x_2 - x_1 }{ t_2 - t_1 } \end{equation}
 			\begin{equation} v_x = \frac{ \mathrm d x }{ \mathrm d t } \end{equation}
 			\begin{equation} \bar a_x = \frac{ \triangle v_x }{ \triangle t } = \frac{ v_{2x} - v_{1x} }{ t_2 - t_1 } \end{equation}
 			\begin{equation} a_x = \frac{ \mathrm d v_x }{ \mathrm d t} \end{equation}
+			Il passaggio al limite
+		\subsection{MOTO UNIFORMEMENTE ACCELERATO}
+			\[ a_x = \bar a_x = \frac{\triangle v_x}{ \triangle t} = \frac{ v_x - v_{0x} }{ t - 0 } \]
+			\begin{equation} v_x = v_{0x} + a_x t \end{equation}
+			\begin{equation} \bar v_x = \frac{1}{2} ( v_x + v_{0x} ) \end{equation}
+			\begin{equation} x = x_0 + v_{0x} t + \frac{1}{2} a_x t^2 \end{equation}
+			\[ \frac{\mathrm d x}{\mathrm d t} = \frac{\mathrm d}{\mathrm d t} ( x_0 + v_{0x} t + \frac{1}{2} a_x t^2 ) = v_{0x} + a_x t = v_x \]
+			Integrali delle equazioni del moto (facoltativo)*
+			$ a_x = \frac{\mathrm d v_x}{\mathrm d t} $ che si può scrivere
+			\[ \mathrm d v_x = a_x \mathrm d t \]
+			Integriamo entrambi i membri dell'equazione:
+			\[ \int \mathrm d v_x = \int a_x \mathrm d t =  a_x \int \mathrm d t \]
+			\[ v_x = a_x t + C \]
+			\[ \mathrm d x = v_x \mathrm d t \]
+			\[ \int \mathrm d x = \int ( v_{0x} + a_x t ) \mathrm d t = v_{0x} \int \mathrm d t + a_x \int t \mathrm d t \]
+			\[ x = v_{0x} t + \frac{1}{2} a_x t^2 + C'\]
+		\subsection{CORPI IN CADUTA LIBERA}
+			\begin{equation} v_y = v_{0x} - g t \end{equation}
+			\begin{equation} y = y_0 + v_{0y} t - \frac{1}{2} g t^2 \end{equation}
+			Misura dell'accelerazione di gravità
+
+	\section{FORZA E LEGGI DI NEWTON}
 
 \begin{comment}
 			\begin{equation}  \end{equation}
 			\begin{equation}  \end{equation}
 			\begin{equation}  \end{equation}
+			\begin{equation}  \end{equation}
+			\begin{equation}  \end{equation}
+			\begin{equation}  \end{equation}
 \end{comment}
 
-	\section{FORZA E LEGGI DI NEWTON}
 	\section{MOTO IN DUE E TRE DIMENSIONI}
 	\section{APPLICAZIONI DELLE LEGGI DI NEWTON}
 	\section{QUANTIT\'A DI MOTO}
