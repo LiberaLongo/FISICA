@@ -35,21 +35,21 @@
 		\[ v = \sqrt{ 2 g h } \]
 		\[ t = \sqrt{ \frac{ 2h }{ g } } \]
 	\subsection{Moto del proiettile}
-		\[ y = x \cdot \tan \phi - \frac{ g }{ 2 v_0^2 \cos^2 \phi } x^2 \]
-		\[ h_{\max} = \frac{ v_0^2 \sin^2 \phi }{ 2 g } \]
-		\[ x_{\max} = \frac{ v_0^2 \sin( 2 \phi ) }{ g } \]
+		\[ y = x \cdot \tan \theta - \frac{ g }{ 2 v_0^2 \cos^2 \theta } x^2 \]
+		\[ h_{\max} = \frac{ v_0^2 \sin^2 \theta }{ 2 g } \]
+		\[ x_{\max} = \frac{ v_0^2 \sin( 2 \theta ) }{ g } \]
 	\subsection{Moto Circolare}
-		Velocità angolare: $ \omega = \frac{ \mathrm d \phi }{ \mathrm d t } $ \\
-		Accelerazione angolare: $ \alpha = \frac{ \mathrm d \omega }{ \mathrm d t } = \frac { \mathrm d^2 \phi }{ \mathrm d t^2 } $
+		Velocità angolare: $ \omega = \frac{ \mathrm d \theta }{ \mathrm d t } $ \\
+		Accelerazione angolare: $ \alpha = \frac{ \mathrm d \omega }{ \mathrm d t } = \frac { \mathrm d^2 \theta }{ \mathrm d t^2 } $
 	\subsection{Moto Circolare Uniforme}
 		\[ \omega = \frac{ 2 \pi }{ T } \]
 		\[ v_{tangenziale} = \omega r \]
 		\[ a_{centripeta} = \frac{ v^2 }{ r } = \omega^2 r \]
 	\subsection{Moto Circolare Unif. accelerato}
 		\[ \omega - \omega_0 = \alpha \cdot t \]
-		\[ \phi - \phi_0 = \omega_0 \cdot t + \frac{1}{2} \alpha t^2 \]
+		\[ \theta - \theta_0 = \omega_0 \cdot t + \frac{1}{2} \alpha t^2 \]
 	\subsection{Moto curvilineo}
-		\[ \vec a = a_T \hat \phi + a_R \hat r = \frac{ \mathrm d | \vec v | }{ \mathrm d t } - \frac{ v^2 }{ r } \hat r \]
+		\[ \vec a = a_T \hat \theta + a_R \hat r = \frac{ \mathrm d | \vec v | }{ \mathrm d t } \hat \theta - \frac{ v^2 }{ r } \hat r \]
 \section{Sistemi a più corpi}
 		Massa totale: $ m_T = \sum m_i = \int \mathrm d m $ \\
 		Centro di massa:
@@ -73,7 +73,7 @@
 		Dinamico: $ \vec F_D = - \mu_D | \vec N | \hat v $ \\
 		Viscoso: $ \vec F_V = - \beta \vec v $
 	\subsection{Lavoro}
-		\[ L = \int_{x_i}^{x_f} \vec F \cdot d \vec l = \int_{\phi_i}^{\phi_f} \tau \mathrm d \omega \]
+		\[ L = \int_{x_i}^{x_f} \vec F \cdot d \vec l = \int_{\theta_i}^{\theta_f} \tau \mathrm d \omega \]
 		Forza costante: $ L = \vec F \cdot \vec l $ \\
 		Forza elastica:
 		\[ L = - \frac{1}{2} k (x_f - l_0)^2 + \frac{1}{2} k (x_i - k_0)^2 \]
@@ -94,7 +94,7 @@
 		Forza elastica: $ U ( x ) = \frac{1}{2} k ( x - l_0 )^2 $ \\
 		Gravità: $ U( r ) = - G \frac{ m_1 m_2 }{ r } $ \\
 		Elettrostatica: $ U ( r ) = \frac{1}{ 4 \pi \varepsilon_0 } \cdot \frac{ q_1 q_2 }{ r } $
-\section{Imulso e Momento Angolare}
+\section{Impulso e Momento Angolare}
 		Quantità di moto: $ \vec p = m \vec v $ \\
 		Impulso: $ \vec I = \vec p_f - \vec p_i = \int_{t_1}^{t_2} \vec F \mathrm d t $ \\
 		Momento angolare: $ \vec L = \vec r \times \vec p $ \\
@@ -121,8 +121,8 @@
 		\[ x ( t ) = A \cos ( \omega t + \phi_0 ) \]
 		\[ v ( t ) = - \omega A \sin ( \omega t + \phi_0 ) \]
 		\[ a ( t ) = - \omega^2 A \cos ( \omega t + \phi_0 ) = - \omega^2 x( t ) \]
-		\[ A = \sqrt{ x_0^2 + ( \frac{ v_0 }{ \omega } )^2 } \]
-		\[ \phi_0 = \arctan ( - \frac{ v_0 }{ \omega x_0 } ) \]
+		\[ A = \sqrt{ x_0^2 + \left ( \frac{ v_0 }{ \omega } \right )^2 } \]
+		\[ \phi_0 = \arctan \left ( - \frac{ v_0 }{ \omega x_0 } \right ) \]
 		\[ f = \frac{ \omega }{ 2 \pi } \;,\; T = \frac{ 2 \pi }{ \omega } \]
 		Molla: $ \omega = \sqrt{ \frac{ k }{ m } } $ \\
 		Pendolo: $ \omega = \sqrt{ \frac{ g }{ L } } $
@@ -133,7 +133,7 @@
 		Sfera piena, asse CM: $ I = \frac{ 2 }{ 5 } m r^2 $ \\
 		Lastra quadrata, asse $\perp$ : $ I = \frac{1}{ 6 } m L^2 $
 \section{Gravitazione}
-		Terza legge di Keplero: $ T^2 = ( \frac{ 4 \pi^2 }{ GM_S } ) R^3 $ \\
+		Terza legge di Keplero: $ T^2 = \left ( \frac{ 4 \pi^2 }{ GM_S } \right ) R^3 $ \\
 		Vel. di fuga: $ v = \sqrt{ \frac{ 2 GM_T }{ R_T } } $
 \section{Elasticità}
 		Modulo di Young: $ \frac{ F }{ A } = Y \cdot \frac{ \triangle L }{ L } $ \\
@@ -161,14 +161,14 @@
 		Intensità (dB): $ \beta = 10 \log_{10} \frac{ I }{ I_0 } $ \\
 		Soglia udibile: $ I_0 = 1.0 \times 10^{-12} \frac{ W }{ m^2 } $
 	\subsection{Effetto Doppler}
-		\[ f' = \left ( \frac{ v + v_O \cos \phi_O }{ v - v_S \cos \phi_S } \right ) f \]
+		\[ f' = \left ( \frac{ v + v_O \cos \theta_O }{ v - v_S \cos \theta_S } \right ) f \]
 \section{Termodinamica}
 	\subsection{Primo principio}
 		Calore e cap. termica: $ Q = C \cdot \triangle T $ \\
 		Calore latente di trasf.: $ L_t = \frac{ Q }{ m } $ \\
-		Lavoro \underline{sul} sistema: $ d W = - p d V $ \\
+		Lavoro \underline{sul} sistema: $ \mathrm d W = - p \mathrm d V $ \\
 		En. interna: \[ \triangle U = \begin{cases} Q + W_{sul sistema} \\ Q - W_{del sistema} \end{cases} \]
-		Entropia: $ \triangle S_{AB} = \int_{A}^{B} \frac{ d Q_{REV} }{ T } $
+		Entropia: $ \triangle S_{AB} = \int_{A}^{B} \frac{ \mathrm d Q_{REV} }{ T } $
 	\subsection{Calore specifico}
 		Per unità di massa: $ c = \frac{ C }{ m } $ \\
 		Per mole: $ c_m = \frac{ C }{ n } $ \\
@@ -191,7 +191,7 @@
 	\subsection{Macchine termiche}
 		Efficienza: $ \eta = \frac{ W }{ Q_R } = 1 - \frac{ Q_C }{ Q_H } $
 		\[ C.O.P. \; frigorifero = \frac{ Q_C }{ W } \]
-		\[ C.O.P. \; pompa di calore = \frac{ Q_H }{ W } \]
+		\[ C.O.P. \; pompa \; di \; calore = \frac{ Q_H }{ W } \]
 		Eff. di Carnot: $ \eta_{REV} = 1 - \frac{ T_C }{ T_H } $ \\
 		Teorema di Carnot: $ \eta \leq \eta_{REV} $
 	\subsection{Espansione termica dei solidi}
@@ -207,16 +207,16 @@
 		Legge Stefan-Boltzmann: $ P = e \sigma A T^4 $
 		L. onda emissione: $ \lambda_{\max} = \frac{ 2.898 mmK }{ T } $
 	\subsection{Gas reali}
-		Eq. Van Der Waals: \[ ( p + a ( \frac{ n }{ v } )^2 ) ( V - n b ) = n R T \]
+		Eq. Van Der Waals: \[ \left ( p + a \left ( \frac{ n }{ v } \right )^2 \right ) ( V - n b ) = n R T \]
 \section{Calcolo vettoriale}
 		Prodotto scalare:
-		\[ \vec A \cdot \vec B = | \vec A | | \vec B | \cos \phi \]
+		\[ \vec A \cdot \vec B = | \vec A | | \vec B | \cos \theta \]
 		\[ \vec A \cdot \vec B = A_x B_x + A_y B_y + A_z B_z \]
 		\[ | \vec A | = \sqrt{ \vec A \cdot \vec A } = \sqrt{ A_x^2 + A_y^2 + A_z^2 } \]
 		versore: $ \hat A = \frac{ \vec A }{ | \vec A | } $ \\
 		Prodotto vettoriale:
 		\[ \vec A \times \vec B = \begin{vmatrix} \hat i & \hat j & \hat k \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} \]
-		$ \vec A \times \vec B = ( A_y B_z - A_z B_y ) \hat i + ( A_z B_z - A_x B_z ) \hat j + ( A_x B_y - A_y B_x ) \hat k $
+		$ \vec A \times \vec B = ( A_y B_z - A_z B_y ) \hat i + ( A_z B_x - A_x B_z ) \hat j + ( A_x B_y - A_y B_x ) \hat k $
 \section{Costanti fisiche}
 	\subsection{Costanti fondamentali}
 		Grav.: $ G = 6.67 \times 10^{-11} \frac{ m^3 }{ s^2 \cdot kg } $ \\
@@ -237,20 +237,20 @@
 		Massa sole: $ M_S = 1.99 \times 10^{30} kg $ \\
 		Massa luna: $ M_L = 7.36 \times 10^{22} kg $ \\
 		Vol 1 mole di gas STP: $ V_{STP} = 22.4 L $ \\
-		Temp. 0 assoluto: $ \phi_0 = -273.15 ^{\circ} C $
+		Temp. 0 assoluto: $ \theta_0 = -273.15 ^{\circ} C $
 \section{Trigonometria}
 		$ \sin^2 ( \alpha ) + cos^2 ( \alpha ) = 1 $, $ \tan ( \alpha ) = \frac{ \sin ( \alpha ) }{ \cos ( \alpha ) } $,
 		$ \sin ( - \alpha ) = - \sin ( \alpha ) $, $ \cos ( - \alpha ) = \cos ( \alpha ) $
 		\[ \sin ( \alpha \pm \beta ) = \sin ( \alpha ) \cos ( \beta ) \pm \cos ( \alpha ) \sin ( \beta ) \]
 		\[ \cos ( \alpha \pm \beta ) = \cos ( \alpha ) \cos ( \beta ) \mp \sin ( \alpha ) \sin ( \beta ) \]
-		\[ \sin ( \alpha ) = \pm \cos ( \frac{ \pi }{2} \mp \alpha ) = \pm \sin ( \pi \mp \alpha ) \]
-		\[ \cos ( \alpha ) = \sin ( \frac{ \pi }{2} \pm \alpha ) = - \cos ( \pi \pm \alpha ) \]
+		\[ \sin ( \alpha ) = \pm \cos \left ( \frac{ \pi }{2} \mp \alpha \right ) = \pm \sin ( \pi \mp \alpha ) \]
+		\[ \cos ( \alpha ) = \sin \left ( \frac{ \pi }{2} \pm \alpha \right ) = - \cos ( \pi \pm \alpha ) \]
 		$ \sin^2 ( \alpha ) = \frac{ 1 - \cos ( 2 \alpha ) }{2} $, $ \cos^2 ( \alpha ) = \frac{ 1 + \cos ( 2 \alpha ) }{2} $
 		\[ \sin ( \alpha ) + \sin ( \beta ) = 2 \cos \frac{ \alpha - \beta }{2} \sin \frac{ \alpha + \beta }{2} \]
 		\[ \cos ( \alpha ) + \cos ( \beta ) = 2 \cos \frac{ \alpha - \beta }{2} \cos \frac{ \alpha + \beta }{2} \]
 \section{Derivate}
 		\[ \frac{ \mathrm d }{ \mathrm d x} f ( x ) = f' ( x ) \]
-		\[ \frac{ \mathrm d }{ \mathrm d x} ( a \cdot x ) = a f' ( a \cdot x ) \]
+		\[ \frac{ \mathrm d }{ \mathrm d x} ( a \cdot f( x ) ) = a f' ( x ) \]
 		\[ \frac{ \mathrm d }{ \mathrm d x} f ( g ( x ) ) = f' ( g ( x ) ) \cdot g' ( x ) \]
 		\[ \frac{ \mathrm d }{ \mathrm d x} x^n = n x^{n-1} \]
 		\[ \frac{ \mathrm d }{ \mathrm d x} \frac{1}{ x^n } = - n \frac{1}{ x^{n+1} } \]
