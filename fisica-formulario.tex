@@ -16,8 +16,8 @@
 \setcounter{secnumdepth}{0}		%no numerazione section e subsection
 \usepackage{sectsty}			%section font
 
-\sectionfont{\fontsize{10}{1}\selectfont}
-\subsectionfont{\fontsize{8}{1}\selectfont}
+\sectionfont{\fontsize{10}{10}\selectfont}
+\subsectionfont{\fontsize{8}{10}\selectfont}
 
 \begin{document}
 	%\maketitle
@@ -123,7 +123,7 @@
 		\[ a ( t ) = - \omega^2 A \cos ( \omega t + \phi_0 ) = - \omega^2 x( t ) \]
 		\[ A = \sqrt{ x_0^2 + ( \frac{ v_0 }{ \omega } )^2 } \]
 		\[ \phi_0 = \arctan ( - \frac{ v_0 }{ \omega x_0 } ) \]
-		$ f = \frac{ \omega }{ 2 \pi } $, $ T = \frac{ 2 \pi }{ \omega } $ \\
+		\[ f = \frac{ \omega }{ 2 \pi } \;,\; T = \frac{ 2 \pi }{ \omega } \]
 		Molla: $ \omega = \sqrt{ \frac{ k }{ m } } $ \\
 		Pendolo: $ \omega = \sqrt{ \frac{ g }{ L } } $
 \section{Momenti di inerzia notevoli}
@@ -146,7 +146,7 @@
 \section{Onde}
 		Velocità $v$, pulsazione $\omega$, lunghezza d'onda $\lambda$, periodo $T$, frequenza $f$, numero d'onda $k$.
 		\[ v = \frac{ \omega }{ k } = \frac{ \lambda }{ T } = \lambda f \]
-		$ \omega = \frac{ 2 \pi }{ T } $, $ k = \frac{ 2 \pi }{ \lambda } $
+		\[ \omega = \frac{ 2 \pi }{ T } \;,\; k = \frac{ 2 \pi }{ \lambda } \]
 	\subsection{Onde su una corda}
 		Velocità: $ v = \sqrt{ \frac{ T }{ \mu } } $ \\
 		Spostamento: $ y = y_{\max} \sin ( k x - \omega t ) $ \\
@@ -161,13 +161,13 @@
 		Intensità (dB): $ \beta = 10 \log_{10} \frac{ I }{ I_0 } $ \\
 		Soglia udibile: $ I_0 = 1.0 \times 10^{-12} \frac{ W }{ m^2 } $
 	\subsection{Effetto Doppler}
-		\[ f' = ( \frac{ v + v_O \cos \phi_O }{ v - v_S \cos \phi_S } ) f \]
+		\[ f' = \left ( \frac{ v + v_O \cos \phi_O }{ v - v_S \cos \phi_S } \right ) f \]
 \section{Termodinamica}
 	\subsection{Primo principio}
 		Calore e cap. termica: $ Q = C \cdot \triangle T $ \\
 		Calore latente di trasf.: $ L_t = \frac{ Q }{ m } $ \\
 		Lavoro \underline{sul} sistema: $ d W = - p d V $ \\
-		En. interna: $ \triangle U = \begin{cases} Q + W_{sul sistema} \\ Q - W_{del sistema} \end{cases} $ \\
+		En. interna: \[ \triangle U = \begin{cases} Q + W_{sul sistema} \\ Q - W_{del sistema} \end{cases} \]
 		Entropia: $ \triangle S_{AB} = \int_{A}^{B} \frac{ d Q_{REV} }{ T } $
 	\subsection{Calore specifico}
 		Per unità di massa: $ c = \frac{ C }{ m } $ \\
@@ -184,9 +184,9 @@
 		Energia interna: $ \triangle U = n c_V \triangle V $ \\
 		Entropia: $ \triangle S = n c_V \ln \frac{ T_f }{ T_i } + n R \ln \frac{ V_f }{ V_i } $ \\
 		\underline{Isocora} ($ \triangle V = 0 $): $ W = 0 $ ; $ Q = n c_v \triangle T $ \\
-		\underline{Isobara} ($ \triangle p = 0 $): $ W = - p \triangle V $ ; $ Q = n c_p \triangle T $ \\
-		\underline{Isoterma} ($ \triangle T = 0 $): $ W = - Q = - n R T \ln \frac{ V_f }{ V_i } $ \\
-		\underline{Adiabatica} ($ Q = 0 $): $ p V^{\gamma} = cost.$ ; $ T V^{\gamma -1} = cost.$ ; $ p^{1 - \gamma} T^{\gamma} = cost.$ ;
+		\underline{Isobara} ($ \triangle p = 0 $): \[ W = - p \triangle V \;;\; Q = n c_p \triangle T \]
+		\underline{Isoterma} ($ \triangle T = 0 $): \[ W = - Q = - n R T \ln \frac{ V_f }{ V_i } \]
+		\underline{Adiabatica} ($ Q = 0 $): $ p V^{\gamma} = cost. $; $ T V^{\gamma -1} = cost.$ ; $ p^{1 - \gamma} T^{\gamma} = cost.$ ;
 					$ W = \triangle U = \frac{1}{ \gamma -1 } ( P_f V_f - P_i V_i ) $ 
 	\subsection{Macchine termiche}
 		Efficienza: $ \eta = \frac{ W }{ Q_R } = 1 - \frac{ Q_C }{ Q_H } $
@@ -200,14 +200,14 @@
 		Coefficenti: $ \beta = 3 \alpha $ \\
 		$\beta$ gas perfetto, $p$ costante: $ \beta = \frac{1}{ T } $
 	\subsection{Conduzione e irraggiamento}
-		Corrente termica: $ P = \frac{ \triangle Q }{ \triangle t } = \frac{ \triangle T }{ R } = \frac{ k A }{ \triangle x } \triangle T $ \\
+		Corrente termica: \[ P = \frac{ \triangle Q }{ \triangle t } = \frac{ \triangle T }{ R } = \frac{ k A }{ \triangle x } \triangle T \]
 		Resistenza termica: $ R = \frac{ \triangle x }{ k A } $ \\
 		Resistenza serie: $ R_{eq} = R_1 + R_2 $ \\
 		Resistenza parallelo: $ \frac{1}{ R_{eq} } = \frac{1}{ R_1 } + \frac{1}{ R_2 } $ \\
 		Legge Stefan-Boltzmann: $ P = e \sigma A T^4 $
 		L. onda emissione: $ \lambda_{\max} = \frac{ 2.898 mmK }{ T } $
 	\subsection{Gas reali}
-		Eq. Van Der Waals: $ ( p + a ( \frac{ n }{ v } )^2 ) ( V - n b ) = n R T $
+		Eq. Van Der Waals: \[ ( p + a ( \frac{ n }{ v } )^2 ) ( V - n b ) = n R T \]
 \section{Calcolo vettoriale}
 		Prodotto scalare:
 		\[ \vec A \cdot \vec B = | \vec A | | \vec B | \cos \phi \]
@@ -215,7 +215,7 @@
 		\[ | \vec A | = \sqrt{ \vec A \cdot \vec A } = \sqrt{ A_x^2 + A_y^2 + A_z^2 } \]
 		versore: $ \hat A = \frac{ \vec A }{ | \vec A | } $ \\
 		Prodotto vettoriale:
-		$ \vec A \times \vec B = \begin{vmatrix} \hat i & \hat j & \hat k \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} $ \\
+		\[ \vec A \times \vec B = \begin{vmatrix} \hat i & \hat j & \hat k \\ A_x & A_y & A_z \\ B_x & B_y & B_z \end{vmatrix} \]
 		$ \vec A \times \vec B = ( A_y B_z - A_z B_y ) \hat i + ( A_z B_z - A_x B_z ) \hat j + ( A_x B_y - A_y B_x ) \hat k $
 \section{Costanti fisiche}
 	\subsection{Costanti fondamentali}
@@ -229,7 +229,7 @@
 		Cost. Boltzmann: $ k_b = 1.38 \times 10^{-23} \frac{ J }{ K } $ \\
 		N. Avogadro: $ N_A = 6.022 \times 10^{23} mol^{-1} $ \\
 		C. dei gas: $ R = \begin{cases} 8.314 \frac{ J }{ mol \cdot K } \\ 0.082 \frac{ L \cdot atm }{ mol \cdot K } \end{cases} $ \\
-		C. Stefan-Boltzmann: $ \sigma = 5.6 \times 10^{-8} \frac{ W }{ m^2 \cdot K^4 } $
+		C. Stefan-Boltzmann: \[ \sigma = 5.6 \times 10^{-8} \frac{ W }{ m^2 \cdot K^4 } \]
 	\subsection{Altre costanti}
 		Accel gravità sulla terra: $ g = 9.81 \frac{ m }{ s^2 } $ \\
 		Raggio terra: $ R_T = 6.37 \times 10^{6} m $ \\
@@ -237,12 +237,12 @@
 		Massa sole: $ M_S = 1.99 \times 10^{30} kg $ \\
 		Massa luna: $ M_L = 7.36 \times 10^{22} kg $ \\
 		Vol 1 mole di gas STP: $ V_{STP} = 22.4 L $ \\
-		Temp 0 assoluto: $ \phi_0 = -273.15 ^{\circ} C $
+		Temp. 0 assoluto: $ \phi_0 = -273.15 ^{\circ} C $
 \section{Trigonometria}
 		$ \sin^2 ( \alpha ) + cos^2 ( \alpha ) = 1 $, $ \tan ( \alpha ) = \frac{ \sin ( \alpha ) }{ \cos ( \alpha ) } $,
 		$ \sin ( - \alpha ) = - \sin ( \alpha ) $, $ \cos ( - \alpha ) = \cos ( \alpha ) $
-		\[ \sin ( \alpha \pm \beta ) = \sin ( \alpha ) \cos ( - \beta ) \pm \cos ( \alpha ) \sin ( \beta ) \]
-		\[ \cos ( \alpha \pm \beta ) = \cos ( \alpha ) \cos ( - \beta ) \mp \sin ( \alpha ) \sin ( \beta ) \]
+		\[ \sin ( \alpha \pm \beta ) = \sin ( \alpha ) \cos ( \beta ) \pm \cos ( \alpha ) \sin ( \beta ) \]
+		\[ \cos ( \alpha \pm \beta ) = \cos ( \alpha ) \cos ( \beta ) \mp \sin ( \alpha ) \sin ( \beta ) \]
 		\[ \sin ( \alpha ) = \pm \cos ( \frac{ \pi }{2} \mp \alpha ) = \pm \sin ( \pi \mp \alpha ) \]
 		\[ \cos ( \alpha ) = \sin ( \frac{ \pi }{2} \pm \alpha ) = - \cos ( \pi \pm \alpha ) \]
 		$ \sin^2 ( \alpha ) = \frac{ 1 - \cos ( 2 \alpha ) }{2} $, $ \cos^2 ( \alpha ) = \frac{ 1 + \cos ( 2 \alpha ) }{2} $
@@ -262,8 +262,8 @@
 		\[ \int f ( x ) \mathrm d x = I ( x ) \]
 		\[ \int f ( x - a ) \mathrm d x = I ( x - a ) \]
 		\[ \int f ( a \cdot x ) \mathrm d x = \frac{ I (a \cdot x) }{ a } \]
-		$ \int x^n \mathrm d x = \frac{ x^{n+1} }{ n+1 } $, $ n \neq -1 $
-		$ \int \frac{1}{ x^n } \mathrm d x = - \frac{1}{ ( n-1 ) } \cdot \frac{1}{ x^{n-1} } $, $ n \neq 1 $
+		\[ \int x^n \mathrm d x = \frac{ x^{n+1} }{ n+1 } \;,\; n \neq -1 \]
+		\[ \int \frac{1}{ x^n } \mathrm d x = - \frac{1}{ ( n-1 ) } \cdot \frac{1}{ x^{n-1} } \;,\; n \neq 1 \]
 		\[ \int \frac{1}{ x } \mathrm d x = \ln x \]
 		\[ \int e^x \mathrm d x = e^x \]
 		\[ \int \sin ( x ) \mathrm d x = \cos ( x ) \]
@@ -277,35 +277,4 @@
 	\end{multicols}
 	\end{small}
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
