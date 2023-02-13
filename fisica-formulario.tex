@@ -1,377 +1,104 @@
-\documentclass{article}
+\documentclass[70pt]{article}
 
 \title{FORMULARIO FISICA}
-\date{2023-02-07}
+\date{2023-02-13}
 \author{Libera Longo}
 
 %link utili:
 % https://latex.codecogs.com/eqneditor/editor.php
 
-\usepackage[a4paper,left=2cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}	%margins
+\usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}	%margins
 \usepackage{multicol}			%multicolonna
 \setlength{\columnsep}{1cm}
-\usepackage{imakeidx}			%indice
 \usepackage{xcolor}			%colore testo
 \usepackage{amsmath}			%matematica formule
 \usepackage{amsfonts}
-\usepackage{parskip}			%paragraph with \\
-\usepackage{caption}	%nomi alle tabelle e alle figure
-\usepackage{verbatim}	%commenti latex su più righe
+\setcounter{secnumdepth}{0}		%no numerazione section e subsection
+\usepackage{sectsty}			%section font
 
-\newcommand\norm[1]{\lVert#1\rVert}	%norma
-\newcommand\mathspace{\;\;\;\;\;\;\;\;\;\;\;\; e \;\;\;\;\;\;\;\;\;\;\;\;}
-\newcommand\separationline{\noindent\rule{\textwidth}{0.4pt}} %linea
-
-\renewcommand{\theequation}{\thesection.\arabic{equation}} %numerazione equazioni
-%\renewcommand{\labelitemi}{$\bullet$}	%custom items
-\renewcommand{\labelitemii}{$\circ$}	
-\renewcommand{\labelitemiii}{$\diamond$}
-
-%\makeindex
+\sectionfont{\fontsize{10}{1}\selectfont}
+\subsectionfont{\fontsize{8}{1}\selectfont}
 
 \begin{document}
-	\maketitle
-	%\printindex
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-	\section{MISURE}
+	%\maketitle
+	\begin{small}
+	\begin{multicols}{3}
 
-		\subsection{GRANDEZZE FISICHE, CAMPIONI e UNIT\'A di MISURA}
-			Conferenza Generale dei Pesi e delle Misure (CGPM)
+\section{Cinematica}
+	\subsection{Moto uniformemente accelerato}
+	\subsection{Moto del proiettile}
+	\subsection{Moto Circolare}
+	\subsection{Moto Circolare Uniforme}
+	\subsection{Moto Circolare Unif. accelerato}
+	\subsection{Moto curvilineo}
+\section{Sistemi a più corpi}
+\section{Forze, Lavoro ed Energia}
+	\subsection{Forze fondamentali}
+	\subsection{Forze di Attrito}
+	\subsection{Lavoro}
+	\subsection{Energia}
+\section{Imulso e Momento Angolare}
+	\subsection{Equazioni cardinali}
+\section{Leggi di conservazione}
+\section{Urti}
+\section{Moto Armonico}
+\section{Momenti di inerzia notevoli}
+\section{Gravitazione}
+\section{Elasticità}
+\section{Fluidi}
+\section{Onde}
+	\subsection{Onde su una corda}
+	\subsection{Onde sonore}
+	\subsection{Effetto Doppler}
+\section{Termodinamica}
+	\subsection{Primo principio}
+	\subsection{Calore specifico}
+	\subsection{Gas perfetti}
+	\subsection{Macchine termiche}
+	\subsection{Espansione termica dei solidi}
+	\subsection{Conduzione e irraggiamento}
+	\subsection{Gas reali}
+\section{Calcolo vettoriale}
+\section{Costanti fisiche}
+	\subsection{Costanti fondamentali}
+	\subsection{Altre costanti}
+\section{Trigonometria}
+\section{Derivate}
+\section{Integrali}
+\section{Approssimazioni ($x_0 = 0$)}
 
-		\subsection{il SISTEMA INTERNAZIONALE di UNIT\'A di MISURA}
-			Sistema Internazionale (SI)
-
-			\begin{table}[!htb]
-			\begin{tabular}{|l|l|l|}
-				\hline
-				Grandezza & nome (SI) & simbolo (SI) \\ \hline
-				Tempo & secondo & s \\
-				Lunghezza & metro & m \\
-				Massa & kilogrammo & kg \\
-				Quantità di materia & mole & mol \\
-				Temperatura termodinamica & kelvin & K \\
-				Corrente elettrica & ampere & A \\
-				Intensità luminosa & candela & cd \\ \hline
-			\end{tabular}
-			\caption{Unità fondamentali del Sistema Internazionale}
-			\end{table}
-
-			\begin{table}[!htb]
-			\begin{tabular}{|lll|lll|}
-				\hline
-				Fattore & Prefisso & Simbolo & Fattore & Prefisso & Simbolo \\
-				$10^{18}$ & exa- & E & $10^{-1}$ & deci- & d \\
-				$10^{15}$ & peta- & P & $10^{-2}$ & \textbf{centi-} & c \\
-				$10^{12}$ & tera- & T & $10^{-3}$ & \textbf{milli-} & m \\
-				$10^{9}$ & \textbf{giga-} & G & $10^{-6}$ & \textbf{micro-} & $\mu$ \\
-				$10^{6}$ & \textbf{mega-} & M & $10^{-9}$ & \textbf{nano-} & n \\
-				$10^{3}$ & \textbf{kilo-} & k & $10^{-12}$ & \textbf{pico-} & p \\
-				$10^{2}$ & etto- & h & $10^{-15}$ & femto- & f \\
-				$10^{1}$ & deca- & da & $10^{-18}$ & atto- & a \\ \hline
-			\end{tabular}
-			\caption{Prefissi per le unità SI}
-			\end{table}
-
-		\subsection{il campione di TEMPO}
-		\subsection{il campione di LUNGHEZZA}
-		\subsection{il campione di MASSA}
-
-		\subsection{PRECISIONE e CIFRE SIGNIFICATIVE}
-			Regole:
-			\begin{itemize}
-\item Contando da sinistra, si considerano significative tutte le cifre significative agli zeri che precedono la prima cifra non nulla, troncando quelle di valore incerto oltre la prima.
-\item Moltiplicando o dividendo due o più fattori, il risultato non deve contenere più cifre significative di quante ne contenga il fattore meno preciso.
-\item Nelle addizioni e sottrazioni, ammettendo che per ciascun addendo sia incerta solo l'ultima cifra significativa, sono da considerare incerte tutte le cifre del risultato che occupano posizione decimale corrispondente alle cifre incerte degli addendi; se ne mantiene pertanto solo la prima di esse, che rappresenta quindi l'ultima cifra significativa. \\
-In questo caso nel risultato non ha importanza il \textit{numero} di cifre significative; è la \textit{posizione} che conta.
-			\end{itemize}
-	\section{MOTO IN UNA DIMENSIONE}
-		\subsection{i VETTORI e la CINEMATICA}
-			i vettori hanno \textbf{modulo}, \textbf{direzione} e \textbf{verso}. \\
-			sono vettori: posizione, velocità, accelerazione, forza, quantità di moto, campi elettromagnetici. \\
-			sono scalari: massa, tempo, temperatura, energia. \\
-			La \textbf{cinematica} è la branca della fisica che \textbf{studia il moto dei corpi}.
-			Potremmo descrivere il moto in cui i corpi si muovono specificandone la \textit{posizione}, la \textit{velocità}, l'\textit{accelerazione}. \\
-			moto di \textit{particelle}, ovvero corpi ideali puntiformi dotati di massa, ma di estensione nulla.
-		
-		\begin{multicols}{2}
-
-		\subsection{PROPRIET\'A dei VETTORI}
-			Componenti dei vettori
-			\begin{equation} a_x = a \cos \phi \mathspace a_y = a \sin \phi \end{equation}
-			\begin{equation} a = \sqrt{a_x^2 + a_y^2} \mathspace \tan \phi = \frac{a_y}{a_x} \end{equation}
-			\begin{equation} \vec a = a_x \hat{i} + a_y \hat{j} \end{equation}
-			Somma vettoriale
-			\[ s_x \hat{i} + s_y \hat{j} = ( a_x \hat{i} + a_y \hat{j} ) + ( b_x \hat{i} + b_y \hat{j} ) = ( a_x + b_x ) \hat{i} + ( a_y + b_y ) \hat{j} \]
-			\begin{equation} s_x = a_x + b_x \mathspace s_y = a_y + b_y \end{equation}
-			Moltiplicazione di un vettore per uno scalore
-
-		\subsection{VETTORI POSIZIONE, VELOCIT\'A E ACCELERAZIONE}
-			\begin{equation} \vec r = x \hat{i} + y \hat{j} + z \hat{k} \end{equation}
-			con $\hat{i}$, $\hat{j}$, $\hat{j}$ versori in coordinate cortesiane.
-			\begin{equation} \triangle \vec{r} = \vec r_2 - \vec r_1 \end{equation}
-			\begin{equation} \bar v = \frac{ \triangle \vec r }{ \triangle t } \end{equation}
-			\begin{equation} \vec v = \lim_{ \triangle t \to 0} \frac{ \triangle \vec r }{ \triangle t } \end{equation}
-			\begin{equation} \vec v = \frac{ \mathrm d \vec r }{ \mathrm d t } \end{equation}
-			\begin{equation}
-				\frac{ \mathrm d \vec r }{ \mathrm d t } = \frac{ \mathrm d }{ \mathrm d t} ( x \hat i + y \hat j + z \hat k ) =
-				\frac{ \mathrm d x }{ \mathrm d t } \hat i + \frac{ \mathrm d y }{ \mathrm d t } \hat j + \frac{ \mathrm d z }{ \mathrm d t } \hat k
-			\end{equation}
-			\begin{equation} \vec v = v_x \hat i + v_y \hat j + v_z \hat k \end{equation}
-			\begin{equation}
-				v_x = \frac{ \mathrm d x }{ \mathrm d t } \mathspace
-				v_y = \frac{ \mathrm d y }{ \mathrm d t } \mathspace
-				v_z = \frac{ \mathrm d z }{ \mathrm d t }
-			\end{equation}
-			\begin{equation} velocit\textit{à} \; scalare \; media = \frac{ lunghezza \; totale \; percorsa }{ tempo \; trascorso } \end{equation}
-			\begin{equation} \bar a = \frac{ \triangle v }{ \triangle t } \end{equation}
-			\begin{equation} \vec a = \lim_{ \triangle t \to 0 } \frac{ \triangle \vec v }{ \triangle t } \end{equation}
-			\begin{equation} \vec a = \frac{ \mathrm d \vec v }{ \mathrm d t } \end{equation}
-			\begin{equation}
-				a_x = \frac{ \mathrm d v_x }{ \mathrm d t } \mathspace
-				a_y = \frac{ \mathrm d v_y }{ \mathrm d t } \mathspace
-				a_z = \frac{ \mathrm d v_y }{ \mathrm d t }
-			\end{equation}
-		\subsection{CINEMATICA UNIDIMENSIONALE}
-			\begin{enumerate}
-				\item Particella ferma
-					\begin{equation} x(t) = A \end{equation}
-				\item Moto a velocità costante
-					\begin{equation} x(t) = A + B t \end{equation}
-				\item Moto accelerato
-					\begin{equation} x(t) = A + B t + C t^2 \end{equation}
-					\begin{equation} x(t) = D \cos ( \omega t ) \end{equation}
-				\item L'auto che accelera e frena
-				\item Corpo in caduta
-				\item La pallina che cade e rimbalza
-			\end{enumerate}
-			Equazioni di cinematica unidimensionale
-			\begin{equation} \bar v_x = \frac{ \triangle x }{ \triangle t } = \frac{ x_2 - x_1 }{ t_2 - t_1 } \end{equation}
-			\begin{equation} v_x = \frac{ \mathrm d x }{ \mathrm d t } \end{equation}
-			\begin{equation} \bar a_x = \frac{ \triangle v_x }{ \triangle t } = \frac{ v_{2x} - v_{1x} }{ t_2 - t_1 } \end{equation}
-			\begin{equation} a_x = \frac{ \mathrm d v_x }{ \mathrm d t} \end{equation}
-			Il passaggio al limite
-		\subsection{MOTO UNIFORMEMENTE ACCELERATO}
-			\[ a_x = \bar a_x = \frac{\triangle v_x}{ \triangle t} = \frac{ v_x - v_{0x} }{ t - 0 } \]
-			\begin{equation} v_x = v_{0x} + a_x t \end{equation}
-			\begin{equation} \bar v_x = \frac{1}{2} ( v_x + v_{0x} ) \end{equation}
-			\begin{equation} x = x_0 + v_{0x} t + \frac{1}{2} a_x t^2 \end{equation}
-			\[ \frac{\mathrm d x}{\mathrm d t} = \frac{\mathrm d}{\mathrm d t} ( x_0 + v_{0x} t + \frac{1}{2} a_x t^2 ) = v_{0x} + a_x t = v_x \]
-			Integrali delle equazioni del moto (facoltativo)*
-			$ a_x = \frac{\mathrm d v_x}{\mathrm d t} $ che si può scrivere
-			\[ \mathrm d v_x = a_x \mathrm d t \]
-			Integriamo entrambi i membri dell'equazione:
-			\[ \int \mathrm d v_x = \int a_x \mathrm d t =  a_x \int \mathrm d t \]
-			\[ v_x = a_x t + C \]
-			\[ \mathrm d x = v_x \mathrm d t \]
-			\[ \int \mathrm d x = \int ( v_{0x} + a_x t ) \mathrm d t = v_{0x} \int \mathrm d t + a_x \int t \mathrm d t \]
-			\[ x = v_{0x} t + \frac{1}{2} a_x t^2 + C'\]
-		\subsection{CORPI IN CADUTA LIBERA}
-			\begin{equation} v_y = v_{0x} - g t \end{equation}
-			\begin{equation} y = y_0 + v_{0y} t - \frac{1}{2} g t^2 \end{equation}
-			Misura dell'accelerazione di gravità
-
-		\end{multicols}
-	\section{FORZA E LEGGI DI NEWTON}
-		\begin{multicols}{2}
-
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-
-		\end{multicols}
-	\section{MOTO IN DUE E TRE DIMENSIONI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{APPLICAZIONI DELLE LEGGI DI NEWTON}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{QUANTIT\'A DI MOTO}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{SISTEMI DI PARTICELLE}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{CINEMATICA DEI MOTI ROTATORI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{DINAMICA DEI MOTI ROTATORI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{MOMENTO ANGOLARE}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{ENERGIA 1: LAVORO ED ENERGIA CINETICA}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{ENERGIA 2: ENERGIA POTENZIALE}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{ENERGIA 3: CONSERVAZIONE DELL'ENERGIA}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{LA GRAVITAZIONE}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{STATICA DEI FLUIDI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{DINAMICA DEI FLUIDI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{FENOMENI OSCILLATORI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{FENOMENI ONDULATORI}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{ONDE ACUSTICHE}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{TEORIA DELLA RELATIVIT\'A RISTRETTA}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{TEMPERATURA}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{PROPRIET\'A MOLECOLARI DEI GAS}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}
-	\section{PRIMA LEGGE DELLA TERMODINAMICA
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comment}
-		\end{multicols}}
-	\section{ENTROPIA E SECONDA LEGGE DELLA TERMODINAMICA}
-		\begin{multicols}{2}
-\begin{comment}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-			\begin{equation}  \end{equation}
-\end{comments}
-		\end{multicols}
+	\end{multicols}
+	\end{small}
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
