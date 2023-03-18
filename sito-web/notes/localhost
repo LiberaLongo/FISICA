@@ -1,0 +1,15 @@
+
+command to host local server:
+python3 -m http.server
+
+u access file:/// from a http:// protocol using: 
+localhost:8000
+
+that mean that for example if want to access a file called: '<PATH>/[<DIRECTORY>/]<FILENAME>.html'
+you do this command from terminal:                           cd <PATH>
+then u launch the host local server command:                 python3 -m http.server
+
+to open 'index.html' u just do:                              http://localhost:8000
+to open [<DIRECTORY>/]<FILENAME>.html u do this:
+and then u write on the browser this:                        http://localhost:8000/[<DIRECTORY>/]<FILENAME>.html
+

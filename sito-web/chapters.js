@@ -4,7 +4,11 @@ for (var i = 0; i < array.length ; i++) {
 	index = i+1;
 	if(index < 10)
 		index = "0" + index;
-	string += "<li><a href=\'./chapters/fisica-" + index + "_" + array[i] + ".html\' > cap " + index + "</a> <b>" + array[i] + "</b></li>";
+	//string += "<li><a href=\'./chapters/fisica-" + index + "_" + array[i] + ".html\'>cap " + index + "</a> <b>" + array[i] + "</b></li>";
+	link = "./chapters/fisica-" + index + "_" + array[i] + ".html";
+	link = encodeURIComponent(link.trim()) //replace spaces " " with "%20" so i can use link as an URI / URL
+	func = "$(\"#includeHtml\").load(\"" + link + "\");";
+	string += "<li><button type=\'button\' onclick=\'" + func + "\'>cap " + index + "</button> <b>" + array[i] + "</b></li>\n";
 }
 string += "<li><a href=\'\\chapters\\fisica-appendici.html\'>appendici</a></li>";
 string += "</ul>";
