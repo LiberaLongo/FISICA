@@ -1,0 +1,34 @@
+body{
+	background-color: black;
+}
+
+.container{
+	width: 100%;
+	display: grid;
+	grid-template-areas: "head cont"
+			     "list cont";
+	grid-template-rows: 100px 1fr;
+	grid-template-columns: 1fr 3fr;
+}
+
+a {
+	color: yellow;
+}
+
+#header{
+	grid-area: head;
+	background-color: blue;
+	color: white;
+	margin: 10px;
+	text-align: center;
+	font-size:4rem;	
+}
+#list {
+	grid-area: list;
+	background-color: purple;
+}
+#content {
+	grid-area: cont;
+	background-color: green;
+	padding:10px;
+}
