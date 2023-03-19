@@ -1,0 +1,24 @@
+<!-- https://stackoverflow.com/questions/48954405/mathjax-doesnt-work-inside-jquery-click-event -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+
+
+<button id="math"  type="submit" onClick='replaceAndMath("../chapters/fisica-01_le%20misure.html")'>
+   <b>ShowMathjax On click</b>
+</button>
+<span id="result"></span>
+<script>
+function replaceAndMath(link){
+    event.preventDefault();
+    $("#result").load(link);
+    MathJax.Hub.Queue(['Typeset',MathJax.Hub,'result']);  // <-- YOU NEED THIS
+};
+ 
+//outside .click event
+$("#Outside").html("$$ \\frac{d}{dx}\\left(2x^2\\right)=\\:4x $$");
+</script>
+<div style="padding:10%;">
+   MathJax Outside .click event works:
+   <span id="Outside"></span>
+</div>
