@@ -26,6 +26,7 @@ a {
 #list {
 	grid-area: list;
 	background-color: purple;
+	width: 30vw;
 }
 #includeHtml {
 	grid-area: cont;
