@@ -4,7 +4,9 @@ body{
 a {
 	color: yellow;
 }
-
+table, tr, td {
+	border:1;
+}
 
 .container{
 	width: 100%;
