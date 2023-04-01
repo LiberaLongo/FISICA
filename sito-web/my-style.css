@@ -14,7 +14,7 @@ table, tr, td {
 	grid-template-areas: "head cont"
 			     "list cont";
 	grid-template-rows: 100px 1fr;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 3fr;
 }
 
 #header{
@@ -28,7 +28,6 @@ table, tr, td {
 #list {
 	grid-area: list;
 	background-color: purple;
-	width: 30vw;
 }
 #includeHtml {
 	grid-area: cont;

@@ -1,3 +1,4 @@
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <h1>moto in una dimensione</h1>
 <h2>vettori e cinematica</h2>
 <p>I <b>vettori</b> hanno <i>modulo</i>, <i>direzione</i>, <i>verso</i>.</p>
@@ -35,19 +36,71 @@ Lo scalare può essere un numero pure oppure può rappresentare il valore di una
 
 <h2>vettori posizione: velocità e accelerazione</h2>
 <table border='1'>
-<caption>formule</caption>
-<thead>
-<th>vettore</th>
-<th>componenti</th>
-<th>limite</th>
-<th>derivata</th>
-<th>derivata (componenti)<th>
-<th>media (scalare)</th>
-</thead>
-<tbody>
-</tbody>
+	<caption>formule</caption>
+	<thead>
+		<tr>
+			<th>nome</th>
+			<th>triangoli</th>
+			<th>limite</th>
+			<th>derivata (componenti)</th>
+			<th>componenti</th>
+			<th colspan='3'>componenti (derivate)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				posizione
+			</td><td>
+				\[ \triangle r = \vec r_2 - \vec r_1 \]
+			</td><td colspan='2'></td><td>
+				\[ \vec r = x \hat i + y \hat j + z \hat k \]
+			</td>
+		</tr><tr>
+			<td>
+				velocità
+			</td><td>
+				\[ \vec v = \frac { \triangle \vec r }{ \triangle t }  \]
+			</td><td>
+				\[ \vec v = \lim_{ \triangle t \rightarrow 0} \frac { \triangle \vec r }{ \triangle t } \]
+			</td><td>
+\[ \vec v = \frac { \mathrm d \vec r } { \mathrm d t } = \frac { \mathrm d }{ \mathrm d t } ( x \hat i + y \hat j + z \hat k ) =
+\frac { \mathrm d x } { \mathrm d t } \hat i + \frac { \mathrm d y } { \mathrm d t } \hat j + \frac { \mathrm d z } { \mathrm d t } \hat k \]
+			</td><td>
+				\[ \vec v = v_x \hat i + v_y \hat j + v_z \hat k \]
+			</td><td>
+				\[ v_x = \frac { \mathrm d x } { \mathrm d t } \]
+			</td><td>
+				\[ v_y = \frac { \mathrm d y } { \mathrm d t } \]
+			</td><td>
+				\[ v_z = \frac { \mathrm d z } { \mathrm d t } \]
+			</td>
+		</tr><tr>
+			<td>
+				accelerazione
+			</td><td>
+				\[ \vec a = \frac { \triangle \vec v }{ \triangle t }  \]
+			</td><td>
+				\[ \vec a = \lim_{ \triangle t \rightarrow 0} \frac { \triangle \vec v }{ \triangle t } \]
+			</td><td>
+\[ \vec a = \frac { \mathrm d \vec v } { \mathrm d t } = \frac { \mathrm d }{ \mathrm d t } ( v_x \hat i + v_y \hat j + v_z \hat k ) =
+\frac { \mathrm d v_x } { \mathrm d t } \hat i + \frac { \mathrm d v_y } { \mathrm d t } \hat j + \frac { \mathrm d v_z } { \mathrm d t } \hat k \]
+			</td><td>
+				\[ \vec a = a_x \hat i + a_y \hat j + a_z \hat k \]
+			</td><td>
+				\[ a_x = \frac { \mathrm d v_x } { \mathrm d t } \]
+			</td><td>
+				\[ a_y = \frac { \mathrm d v_y } { \mathrm d t } \]
+			</td><td>
+				\[ a_z = \frac { \mathrm d v_z } { \mathrm d t } \]
+			</td>
+		</tr>
+	</tbody>
 </table>
-<p></p>
-
-
+<p>
+velocità media scalare:
+\[ \bar v = \frac { \triangle r } { \triangle t } = \frac { lunghezza \; totale \; percorsa } { tempo \; trascorso } \]
+accelerazione media scalare:
+\[ \bar a = \frac { \triangle v } { \triangle t } = \frac { \vec v_{finale} - \vec v_{iniziale} } { tempo \; trascorso } \]
+</p>
 
