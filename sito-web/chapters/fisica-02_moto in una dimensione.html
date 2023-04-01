@@ -1,8 +1,6 @@
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <h1>moto in una dimensione</h1>
 <h2>vettori e cinematica</h2>
 <p>I <b>vettori</b> hanno <i>modulo</i>, <i>direzione</i>, <i>verso</i>.</p>
-<p>Chiamiamo \( \vec r \) il vettore posizione.
 <p>In fisica sono vettori: velocità, accelerazione, forza, quantità di moto e i campi elettromagnetici;<br>
 sono scalari: massa, tempo, temperatura ed energia (che sono completamente descritte da una quantità numerica e la sua unità di misura).</p>
 <p>la <b>cinematica</b> studia <b>il moto dei corpi</b> e le <b>relazioni</b> che intercorrono tra loro.</p>
@@ -103,4 +101,60 @@ velocità media scalare:
 accelerazione media scalare:
 \[ \bar a = \frac { \triangle v } { \triangle t } = \frac { \vec v_{finale} - \vec v_{iniziale} } { tempo \; trascorso } \]
 </p>
+<p> riassumendo:</p>
+<ul>
+	<li>la posizione si indica con \( \vec r \)</li>
+	<li>la velocità con \( \vec v \) ed è la derivata della posizione</li>
+	<li>l'accelazione con \( \vec a \) ed è la derivata della velocità (e equivalentemente la derivata due volte della posizione).</ßli>
+</ul>
+<h2>cinematica unidimensionale</h2>
+<p> Nella cinematica unidimensionale una particella si muove solamente su una linea retta.</p>
+<ol>
+	<li>
+		<b>particella ferma</b><br>
+		\( x ( t ) = A \)<br>
+		\( v ( t ) = 0 \)<br>
+		\( a ( t ) = 0 \)
+	</li><li>
+		<b>moto a velocità costante</b> (detto anche <i>moto uniforme</i>)<br>
+		\( x ( t ) = A + B t \)<br>
+		\( v ( t ) = B \)<br>
+		\( a ( t ) = 0 \)
+	</li><li>
+		<b>moto accelerato</b>
+		<ul>
+			<li>
+				<b>uniforme ?</b><br>
+					\( x ( t ) = A + B t + C t^2 \)<br>
+					\( v ( t ) = B + C t \)<br>
+					\( a ( t ) = 2 C \)
+			</li><li>
+				<b>oscilla tra due estremi</b> \( x = D \) e \( x = - D \)<br>
+					\( x ( t ) = D \cos ( \omega t ) \)
+			</li>
+		</ul>
+	</li><li>
+		<i>l'auto che accelera e frena</i>
+	</li><li>
+		<i>corpo in caduta</i>
+	</li><li>
+		<i>la pallina che cade e rimbalza</i>
+	</li>
+</ol>
+<p> le equazioni di cinematica unidimensionale considerano \( y(t) = 0 \) e \( z(t) = 0 \) costanti
+(facendo muovere la particella solo lungo l'asse \( x \) )<br>
+da ciò ricaviamo le ulteriori equazioni:
+\[ v_x = v_{0x} + a_x t \]
+\[ x = x_0 + v_{0x} + \frac{1}{2} a_x t^2 \]
+</p>
+<h2>corpi in caduta libera</h2>
+<p> 
+\[ v_y = v_{0y} - g t \]
+\[ y = y_0 + v_{0y} t - \frac{1}{2} g t^2 \]
+dove \( a_y = - g \) e \( g = 9.81 m / s^2 \) è una particolare accelerazione chiamata <b>accelerazione di gravità</b>
+</p>
+
+<h3>esercizi</h3>
+<a href='/exercises_remarkable/es_remarkable_cap02.pdf' target='_blank'>cap 02 esercizi remarkable</a>
+
 
