@@ -7,6 +7,24 @@ a {
 table, tr, td {
 	border:1;
 }
+h1 {
+	background-color: navy;
+	color:red;
+	width: 70vw;
+	padding-left:10px;
+}
+h2 {
+	background-color: lime;
+	width: 70vw;
+	padding-left:10px;
+}
+#esercizi{
+	background-color: blue;
+	font-size: 2rem;
+	width: 70vw;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
 
 .container{
 	width: 100%;
@@ -21,16 +39,18 @@ table, tr, td {
 	grid-area: head;
 	background-color: blue;
 	color: white;
-	margin: 10px;
+	border: 10px solid black;
 	text-align: center;
-	font-size:4rem;	
+	font-size: 4rem;	
 }
 #list {
 	grid-area: list;
 	background-color: purple;
+	width: 25vw;
 }
 #includeHtml {
 	grid-area: cont;
 	background-color: green;
-	padding-left:10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
