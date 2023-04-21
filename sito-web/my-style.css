@@ -1,9 +1,6 @@
 body{
 	background-color: black;
 }
-a {
-	color: yellow;
-}
 table, tr, td {
 	border:1;
 }
@@ -19,7 +16,7 @@ h2 {
 	padding-left:10px;
 }
 #esercizi{
-	background-color: blue;
+	background-color: green;
 	font-size: 2rem;
 	width: 70vw;
 	padding-left: 10px;
@@ -50,7 +47,7 @@ h2 {
 }
 #includeHtml {
 	grid-area: cont;
-	background-color: green;
+	background-color: lightblue;
 	padding-left: 10px;
 	padding-right: 10px;
 }

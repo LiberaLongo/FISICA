@@ -10,16 +10,11 @@ function loadDOM()
 	for (elem of array) 
 	{
 		iterator = iterator+1;
-		if(index < 9)
-			index = "0" + iterator;
-		else
-			index = iterator;
-
-		link = `chapters/fisica-${index}_${elem}.html`;
-		link = encodeURIComponent(link.trim())
-		string += `<li><button class="chap_button" type="button" onclick="func('${link}')" > cap ${index} </button> <b>${elem}</b></li>\n`;
-	}
-	string += "<li><a href=\'\\chapters\\fisica-appendici.html\'>appendici</a></li>";
+		index = ( iterator < 10 ? "0" : "" ) + iterator ;
+		link = chapters/fisica-${index}_${elem}.html;
+                string += <li><button class="chap_button" type="button" onclick="func('${link}')" > cap ${index} </button> <b>${elem}</b></li>\n;
+        }
+        string += <li><a href='chapters/fisica-appendici.html'>appendici</a></li>;
 	string += "</ul>";
 	$("#list").html(string);
 }
