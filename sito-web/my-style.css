@@ -11,9 +11,14 @@ h1 {
 	padding-left:10px;
 }
 h2 {
+	background-color: green;
+	width: 60vw;
+	padding-left:50px;
+}
+h3 {
 	background-color: lime;
-	width: 70vw;
-	padding-left:10px;
+	width: 50vw;
+	padding-left:100px;
 }
 #esercizi{
 	background-color: green;

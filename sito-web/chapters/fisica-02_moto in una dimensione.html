@@ -1,14 +1,36 @@
 <h1>moto in una dimensione</h1>
-<h2>vettori e cinematica</h2>
+
+<h2>formule (riassunto)</h2>
+
+<dl>
+<dt>Velocità</dt>
+<dd>\( \vec v = \frac{ \mathrm d \vec r }{ \mathrm d t } \)</dd>
+<dt>Accelerazione</dt>
+<dd>\( \vec a = \frac{ \mathrm d \vec v }{ \mathrm d t } = \frac { \mathrm d^2 }{ \mathrm d t } \)</dd>
+</dl>
+<h3>Moto uniformemente accelerato</h3>
+<p>
+\( v - v_0 = a \cdot t \)<br/>
+\( x - x_0 = v_0 \cdot t + \frac{1}{2} a t^2 \)<br/>
+\( x - x_0 = \frac{1}{2} ( v_0 + v_x) t \)<br/>
+\( v_x^2 - v_0^2 = 2 a (x - x_0) \)<br/>
+Corpo in caduta da fermo:<br/>
+\( v = \sqrt{ 2 g h } \)<br/>
+\( t = \sqrt{ \frac{ 2 h }{ g } } \)<br/>
+</p>
+
+<h2>appunti (schemi)</h2>
+
+<h3>vettori e cinematica</h3>
 <p>I <b>vettori</b> hanno <i>modulo</i>, <i>direzione</i>, <i>verso</i>.</p>
 <p>In fisica sono vettori: velocità, accelerazione, forza, quantità di moto e i campi elettromagnetici;<br>
 sono scalari: massa, tempo, temperatura ed energia (che sono completamente descritte da una quantità numerica e la sua unità di misura).</p>
 <p>la <b>cinematica</b> studia <b>il moto dei corpi</b> e le <b>relazioni</b> che intercorrono tra loro.</p>
 <p>in questo capitolo ci limitiamo al moto di <b>particelle</b> e consideriamo gli altri corpi (rigidi) come se fossero particelle.</p>
 
-<h2>proprietà dei vettori</h2>
+<h3>proprietà dei vettori</h3>
 
-<h3>componenti dei vettori</h3>
+<h4>componenti dei vettori</h4>
 <p>possiamo descrivere i vettori descrivendolo in termini di componenti, di \( \vec a \) indichiamo il modulo con \( a \) senza dover specificare \( | \vec a | \)
 \[ a_x = a \cos \phi \;\;\;\;\; e \;\;\;\;\; a_y = a \sin \phi \]
 \( a \) è sempre positivo ma \( a_x \) e \( a_y \) possono essere sia negativi sia positivi, in dipensenza del valore che assume l'angolo \( \phi \).
@@ -19,20 +41,20 @@ l'equazione vettoriale \( \vec a = \vec b \) significa che i due vettori sono es
 <i>due vettori sono uguali se e solo se sono uguali tutte le loro rispettive componenti.</i>
 </p>
 
-<h3>somma vettoriale</h3>
+<h4>somma vettoriale</h4>
 <p> per fare la somma vettoriale si procede con la regola <b>testa coda</b>, ovvero:
 \[ \vec s = \vec a + \vec b = s_x \hat i + s_y \hat j = ( a_x \hat i + a_y \hat j ) + ( b_x \hat i + b_y \hat j ) = \newline ( a_x + b_x ) \hat i + ( a_y + b_y ) \hat j \]
 ovvero: &emsp; \( s_x = a_x + b_x \;\;\;\;\; e \;\;\;\;\; s_y = a_y + b_y \)
 </p>
 
-<h3>moltiplicazione di un vettore per uno scalare</h3>
+<h4>moltiplicazione di un vettore per uno scalare</h4>
 <p>Il prodotto tra uno scalare \( c \) e un vettore \( \vec a \), che si scrive \( c \vec a \), è definito come un nuovo vettore di modulo pari al prodotto arimetico tra \( c \) e il modulo di \( \vec a \). Le componenti di questo nuovo vettore sono di conseguenza \( c a_x \) e \( c a_y \).
 Lo scalare può essere un numero pure oppure può rappresentare il valore di una grandezza fisica; in quest'ultimo caso, essendo dotato di dimensioni e unità di misura, il nuovo vettore \( c \vec a \) rappresenterà una grandezza diversa da quella del vettore \( \vec a \).</p>
 <p>La divisione di un vettore per uno scalare, come \( \vec a / c \) si effettua semplicemente moltiplicando il vettore per il reciproco dello scalare, \( 1 / c \).</p>
 <p>La moltiplicazione per uno scalare non modifica la direzione del vettore; può invece rovesciarne il verso nel caso che lo scalare sia di segno negativo.</p>
 <p>Moltiplicando un vettore \( \vec b \) per lo scalare -1 si ottiene il vettore \( - \vec b \), che è un vettore di modulo e direzione uguali a quelli di \( \vec b \), ma anvente verso opposto. Le sue componenti sono \( - b_x \) e \( - b_y \). Questo è utile per esprimere la differenza (ovvero puoi esprimere \( \vec d = \vec a - \vec b = \vec a + ( - \vec b ) \) riducendola quindi all'addizione di \( \vec a \) e \( - \vec b \).</p>
 
-<h2>vettori posizione: velocità e accelerazione</h2>
+<h3>vettori posizione: velocità e accelerazione</h3>
 <table border='1'>
 	<caption>formule</caption>
 	<thead>
@@ -107,7 +129,7 @@ accelerazione media scalare:
 	<li>la velocità con \( \vec v \) ed è la derivata della posizione</li>
 	<li>l'accelazione con \( \vec a \) ed è la derivata della velocità (e equivalentemente la derivata due volte della posizione).</ßli>
 </ul>
-<h2>cinematica unidimensionale</h2>
+<h3>cinematica unidimensionale</h3>
 <p> Nella cinematica unidimensionale una particella si muove solamente su una linea retta.</p>
 <ol>
 	<li>
@@ -147,7 +169,7 @@ da ciò ricaviamo le ulteriori equazioni:
 \[ v_x = v_{0x} + a_x t \]
 \[ x = x_0 + v_{0x} + \frac{1}{2} a_x t^2 \]
 </p>
-<h2>corpi in caduta libera</h2>
+<h3>corpi in caduta libera</h3>
 <p> 
 \[ v_y = v_{0y} - g t \]
 \[ y = y_0 + v_{0y} t - \frac{1}{2} g t^2 \]
