@@ -1,0 +1,29 @@
+\\https://www.oliforum.it/viewtopic.php?t=8200
+
+\documentclass[italian]{article}
+\usepackage{amsmath,amsthm,amssymb,babel}
+
+\theoremstyle{definition}
+\newtheorem{ex}{Esercizio}
+\pagestyle{plain}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\begin{document}
+\title{%
+}
+\author{Matthaeus}
+\date{\today}
+\maketitle
+%------------------------------------------------
+\begin{ex}
+ $f'(\sin{x}) = \cos{x}$
+    \begin{align*}
+       f'(\sin{x}) & = \lim_{h \rightarrow 0} \frac{\sin(x+h) -
+       \sin(x)}{h}\\
+            &= \lim_{h \rightarrow 0} \frac{\sin{x}\cos{h}+\sin{h}\cos{x} -
+       \sin{x}}{h}\\
+            &= \lim_{h \rightarrow 0} \frac{\sin{x}\cos{h} - \sin{x} +\sin{h}\cos{x}}{h}\\
+            &= \lim_{h \rightarrow 0} \frac{\sin{x}\cos{h} - \sin{x}}{h} +  \lim_{h \rightarrow 0} \frac{\sin{h}\cos{x}}{h}\\
+    \end{align*}
+    \end{ex}
+
+\end{document}
