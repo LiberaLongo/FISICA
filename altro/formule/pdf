@@ -1,5 +1,0 @@
-#!/bin/bash
-name='fisica-formulario'
-pdflatex $name.tex
-rm $name.log
-rm $name.aux

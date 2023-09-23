@@ -1,4 +1,0 @@
-#!/bin/bash
-pdflatex eserciziario.tex
-rm eserciziario.log
-rm eserciziario.aux
