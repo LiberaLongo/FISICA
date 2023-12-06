@@ -4,3 +4,6 @@
 *.ind
 *.log
 
+# autosave di xournal++ $ xournalpp
+.*.autosave.xopp
+
