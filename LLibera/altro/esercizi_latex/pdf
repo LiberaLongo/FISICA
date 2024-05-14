@@ -1,6 +1,0 @@
-#!/bin/bash
-name=$1
-pdflatex $name.tex
-rm $name.log
-rm $name.aux
-evince $name.pdf
